@@ -17,6 +17,8 @@ Menú principal con acceso a cada módulo según el rol del usuario.
 Laravel, JavaScript, Git y GitHub.
 
 ## Equipo
-- Tania
-- (integrante 2)
-- (integrante 3)
+- Acevedo Herrera Mario Alberto
+- Hilario Monroy Luis Manuel 
+  Perea Reyes Tania
+- Romero Guerrero Estrella
+- Valencia Ruiz Mitzi Lizeth
