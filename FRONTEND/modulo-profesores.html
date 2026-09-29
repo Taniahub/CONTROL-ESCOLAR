@@ -1,1 +1,125 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control Escolar - Módulo Profesores</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f4f6f8; }
+    header { background: #1f4e79; color: #fff; padding: 15px 30px; }
+    nav { background: #2e75b6; }
+    nav ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; }
+    nav a { display: block; color: #fff; padding: 12px 20px; text-decoration: none; }
+    nav a:hover { background: #1f4e79; }
+    main { max-width: 900px; margin: 20px auto; padding: 0 20px; }
+    section { background: #fff; padding: 20px; margin-bottom: 20px; border-radius: 6px; }
+    label { display: block; margin-top: 10px; }
+    input, select { width: 100%; padding: 8px; margin-top: 4px; box-sizing: border-box; }
+    button { margin-top: 15px; padding: 10px 20px; background: #2e75b6; color: #fff; border: none; border-radius: 4px; cursor: pointer; }
+    table { width: 100%; border-collapse: collapse; margin-top: 15px; }
+    th, td { border: 1px solid #ccc; padding: 8px; text-align: center; }
+    th { background: #dce6f1; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>CONTROL ESCOLAR - Módulo Profesores</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#parciales">Calificaciones parciales</a></li>
+      <li><a href="#finales">Calificaciones finales</a></li>
+      <li><a href="#extraordinarios">Extraordinarios</a></li>
+      <li><a href="#reporte">Reporte de calificaciones</a></li>
+      <li><a href="#asistencias">Asistencias</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="parciales">
+      <h2>Calificaciones parciales</h2>
+      <form>
+        <label>Matrícula del alumno
+          <input type="text" placeholder="Ej. 2024001">
+        </label>
+        <label>Materia
+          <input type="text" placeholder="Ej. Administración de Proyectos">
+        </label>
+        <label>Parcial
+          <select>
+            <option>Primer parcial</option>
+            <option>Segundo parcial</option>
+            <option>Tercer parcial</option>
+          </select>
+        </label>
+        <label>Calificación
+          <input type="number" min="0" max="10" step="0.1">
+        </label>
+        <button type="submit">Guardar</button>
+        <button type="button">Editar</button>
+        <button type="button">Eliminar</button>
+      </form>
+    </section>
+
+    <section id="finales">
+      <h2>Calificaciones finales</h2>
+      <p>Registro, consulta, edición y eliminación de calificaciones finales.</p>
+    </section>
+
+    <section id="extraordinarios">
+      <h2>Exámenes extraordinarios</h2>
+      <p>Registro, consulta, edición y eliminación de calificaciones de extraordinarios.</p>
+    </section>
+
+    <section id="reporte">
+      <h2>Reporte de calificaciones</h2>
+      <table>
+        <tr>
+          <th>Matrícula</th>
+          <th>Alumno</th>
+          <th>Materia</th>
+          <th>Parcial 1</th>
+          <th>Parcial 2</th>
+          <th>Final</th>
+        </tr>
+        <tr>
+          <td>2024001</td>
+          <td>Alumno Ejemplo</td>
+          <td>Administración de Proyectos</td>
+          <td>9.0</td>
+          <td>8.5</td>
+          <td>8.8</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="asistencias">
+      <h2>Asistencias</h2>
+      <table>
+        <tr>
+          <th>Matrícula</th>
+          <th>Alumno</th>
+          <th>Fecha</th>
+          <th>Asistencia</th>
+        </tr>
+        <tr>
+          <td>2024001</td>
+          <td>Alumno Ejemplo</td>
+          <td>28/09/2026</td>
+          <td>
+            <select>
+              <option>Presente</option>
+              <option>Ausente</option>
+              <option>Justificada</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+</body>
+</html>
